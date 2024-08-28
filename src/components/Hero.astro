@@ -1,0 +1,33 @@
+---
+import avatar from './images/avatar.png';
+---
+
+<section class="mt-16 mb-40 md:my-40 flex flex-col-reverse lg:flex-row items-center justify-between" id="hero">
+  <div id="hero-text">
+    <h1 class="font-title font-bold tracking-wider text-4xl md:text-7xl text-neutral-100 mb-3 md:mb-4">
+      Nicolas Milhem
+    </h1>
+    <h2 class="font-title font-medium tracking-wider text-xl md:text-3xl text-sky-300 mb-4 md:mb-8">
+      Développeur front-end
+    </h2>
+    <p
+      class="font-text md:text-xl md:leading-relaxed max-w-xl tracking-wide  text-neutral-400 mb-8"
+    >
+      Passionné du web, spécialisé en JavaScript et React, je suis prêt à relever
+      des défis et à transformer des idées en sites web fonctionnels.
+    </p>
+    <div class="flex items-center gap-2 font-text">
+      <a
+        class="rounded-full text-sm px-5 py-2.5 text-center tracking-wider font-semibold text-neutral-900 border-2 border-sky-300 bg-sky-300 hover:bg-sky-400 hover:border-sky-400 transition-colors duration-300"
+        href="#projects">Mes projets</a
+      >
+      <a
+        class="rounded-full text-sm px-5 py-2.5 text-center tracking-wider font-semibold text-neutral-100 border-2 border-sky-300 hover:bg-sky-300 hover:text-neutral-900 transition-colors duration-300"
+        href="#contact">Contact</a
+      >
+    </div>
+  </div>
+  <div class="mb-8 lg:mb-0" id="hero-img">
+    <img class="w-24 h-24 md:w-36 md:h-36 lg:w-80 lg:h-80" src={avatar.src} alt="Avatar">
+  </div>
+</section>

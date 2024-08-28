@@ -1,15 +1,13 @@
 ---
+import Hero from '../components/Hero.astro';
 import Layout from '../layouts/Layout.astro';
 
 const pageTitle = "Nicolas Milhem - Développeur web"
 ---
 
 <Layout pageTitle={pageTitle}>
-	<main class="max-w-6xl m-auto px-4 text-white border border-red-500 mt-28">
-		<section class="my-4  border border-sky-500" id="hero">
-			<h1 class="text-5xl font-title font-medium my-2">Nicolas Milhem <span class="text-gradient text-sky-300">Développeur front-end</span></h1>
-			<p class="font-text text-neutral-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, deserunt!</p>
-		</section>
+	<main class="max-w-6xl m-auto px-4 text-white">
+		<Hero />
 		<section id="about" class="my-4 border border-violet-300">A PROPOS</section>
 		<section id="skills" class="my-4 border border-lime-300">SKILLS</section>
 		<section id="projects" class="my-4 border border-blue-600">PROJETS</section>
