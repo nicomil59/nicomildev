@@ -1,8 +1,9 @@
 ---
+import Layout from '../layouts/Layout.astro';
 import Hero from '../components/hero/Hero.astro';
 import About from '../components/about/About.astro';
 import Skills from '../components/Skills.astro';
-import Layout from '../layouts/Layout.astro';
+import Projects from '../components/Projects.astro';
 
 const pageTitle = "Nicolas Milhem - Développeur web"
 ---
@@ -12,7 +13,7 @@ const pageTitle = "Nicolas Milhem - Développeur web"
 		<Hero />
 		<About />
 		<Skills />
-		<section id="projects" class="my-4 border border-blue-600">PROJETS</section>
+		<Projects />
 		<section id="contact" class="my-4 border border-lime-100">CONTACT</section>
 	</main>
 </Layout>
