@@ -1,6 +1,7 @@
 ---
-import About from '../components/about/About.astro';
 import Hero from '../components/hero/Hero.astro';
+import About from '../components/about/About.astro';
+import Skills from '../components/Skills.astro';
 import Layout from '../layouts/Layout.astro';
 
 const pageTitle = "Nicolas Milhem - Développeur web"
@@ -10,7 +11,7 @@ const pageTitle = "Nicolas Milhem - Développeur web"
 	<main class="max-w-6xl m-auto px-4 text-white">
 		<Hero />
 		<About />
-		<section id="skills" class="my-4 border border-lime-300">SKILLS</section>
+		<Skills />
 		<section id="projects" class="my-4 border border-blue-600">PROJETS</section>
 		<section id="contact" class="my-4 border border-lime-100">CONTACT</section>
 	</main>
