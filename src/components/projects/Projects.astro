@@ -1,33 +1,98 @@
 ---
 import { Image } from 'astro:assets';
 import instagrum from './images/instagrum-capture.png';
+import reacttv from './images/react-tv-capture.png';
+import planningseries from './images/planning-series-capture.png';
 ---
 
 <section id="projects" class="py-10 md:py-16">
     <h2 class="text-3xl md:text-4xl font-medium text-neutral-100 tracking-wide mb-8 md:mb-16 flex items-center gap-2 md:gap-4"><svg class="h-8 w-8 md:h-10 md:w-10 text-sky-300 hover:rotate-2 transition duration-300"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="5" cy="5" r="1" />  <circle cx="12" cy="5" r="1" />  <circle cx="19" cy="5" r="1" />  <circle cx="5" cy="12" r="1" />  <circle cx="12" cy="12" r="1" />  <circle cx="19" cy="12" r="1" />  <circle cx="5" cy="19" r="1" />  <circle cx="12" cy="19" r="1" />  <circle cx="19" cy="19" r="1" /></svg><span>projets</span></h2>
     <div id="featured-projects">
-      <ul class="flex flex-col gap-12 md:gap-20">
+      <ul class="flex flex-col gap-12 md:gap-24">
         <li class="flex items-center justify-between relative">
           <a aria-label="Démo live (s'ouvre dans un nouvel onglet)" href="https://instagrum.vercel.app/" target="_blank" class="w-3/5 hidden md:block rounded-lg hover:scale-[102px] transition duration-300">
             <Image src={instagrum} alt="Capture d'écran du projet Instagrum" class="rounded-lg hover:scale-105 transition duration-300 border-4 border-sky-500" />
           </a>
           <div class="w-full md:w-1/2 p-8 rounded-lg shadow bg-neutral-700/80 backdrop-blur-md flex flex-col md:absolute md:max-w-xl md:max-h-[340px] md:right-0">
             <h3 class="mb-6 text-2xl font-title font-medium text-neutral-100 tracking-wide">Instagrum</h3>
-            <p class="mb-6 font-text text-neutral-300">Clone d’une page profil Instagram développé avec React. Mise en œuvre d'une interface utilisateur responsive qui respecte l'esthétique du réseau social.</p>
+            <p class="mb-6 font-text text-neutral-300">Clone d’une page profil Instagram développé avec React. Mise en œuvre d'une UI responsive qui respecte l'esthétique du réseau social.</p>
             <ul class="self-end flex items-center gap-2 mb-6">
               <li>
-                <span class="text-xs font-text font-medium tracking-wide px-2.5 py-0.5 rounded bg-neutral-900 text-sky-300">React</span>
+                <span class="text-xs font-text font-medium tracking-wide px-2.5 py-0.5 rounded bg-neutral-900 text-sky-300">react</span>
               </li>
               <li>
-                <span class="text-xs font-text font-medium tracking-wide px-2.5 py-0.5 rounded bg-neutral-900 text-sky-300">Styled Components</span>
+                <span class="text-xs font-text font-medium tracking-wide px-2.5 py-0.5 rounded bg-neutral-900 text-sky-300">styled components</span>
               </li>
             </ul>
             <div class="flex items-center justify-between">
               <div class="flex items-center gap-2">
-                <a aria-label="GitHub (s'ouvre dans un nouvel onglet)" class="text-sky-300 hover:text-sky-400 transition-colors duration-300" href="https://github.com/nicomil59" target="_blank">
+                <a aria-label="GitHub (s'ouvre dans un nouvel onglet)" class="text-sky-300 hover:text-sky-400 transition-colors duration-300" href="https://github.com/nicomil59/instagrum" target="_blank">
                   <svg class="h-5 w-5"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M9 19c-4.286 1.35-4.286-2.55-6-3m12 5v-3.5c0-1 .099-1.405-.5-2 2.791-.3 5.5-1.366 5.5-6.04a4.567 4.567 0 0 0 -1.333 -3.21 4.192 4.192 0 00-.08-3.227s-1.05-.3-3.476 1.267a12.334 12.334 0 0 0 -6.222 0C6.462 2.723 5.413 3.023 5.413 3.023a4.192 4.192 0 0 0 -.08 3.227A4.566 4.566 0 004 9.486c0 4.64 2.709 5.68 5.5 6.014-.591.589-.56 1.183-.5 2V21" /></svg>
                 </a>
                 <a aria-label="Démo live (s'ouvre dans un nouvel onglet)" class="text-sky-300 hover:text-sky-400 transition-colors duration-300" href="https://instagrum.vercel.app/" target="_blank">
+                  <svg class="h-5 w-5"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />  <polyline points="15 3 21 3 21 9" />  <line x1="10" y1="14" x2="21" y2="3" /></svg>
+                </a>
+              </div>
+              <a class="rounded-full px-3 py-2 text-xs text-center tracking-wider font-text font-medium text-neutral-900 border-2 border-sky-300 bg-sky-300 hover:bg-sky-400 hover:border-sky-400 transition-colors duration-300" href="#">En savoir plus</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="flex items-center justify-between relative">
+          <a aria-label="Démo live (s'ouvre dans un nouvel onglet)" href="https://nicomil59.github.io/react-tv" target="_blank" class="w-3/5 hidden md:block rounded-lg hover:scale-[102px] transition duration-300">
+            <Image src={reacttv} alt="Capture d'écran du projet React TV" class="rounded-lg hover:scale-105 transition duration-300 border-4 border-sky-500" />
+          </a>
+          <div class="w-full md:w-1/2 p-8 rounded-lg shadow bg-neutral-700/80 backdrop-blur-md flex flex-col md:absolute md:max-w-xl md:max-h-[340px] md:right-0">
+            <h3 class="mb-6 text-2xl font-title font-medium text-neutral-100 tracking-wide">React TV</h3>
+            <p class="mb-6 font-text text-neutral-300">Application permettant de rechercher des séries TV dans une base de données externe via une API et de sauvegarder ses titres favoris.</p>
+            <ul class="self-end flex items-center gap-2 mb-6">
+              <li>
+                <span class="text-xs font-text font-medium tracking-wide px-2.5 py-0.5 rounded bg-neutral-900 text-sky-300">react</span>
+              </li>
+              <li>
+                <span class="text-xs font-text font-medium tracking-wide px-2.5 py-0.5 rounded bg-neutral-900 text-sky-300">sass</span>
+              </li>
+              <li>
+                <span class="text-xs font-text font-medium tracking-wide px-2.5 py-0.5 rounded bg-neutral-900 text-sky-300">axios</span>
+              </li>
+            </ul>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <a aria-label="GitHub (s'ouvre dans un nouvel onglet)" class="text-sky-300 hover:text-sky-400 transition-colors duration-300" href="https://github.com/nicomil59/react-tv" target="_blank">
+                  <svg class="h-5 w-5"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M9 19c-4.286 1.35-4.286-2.55-6-3m12 5v-3.5c0-1 .099-1.405-.5-2 2.791-.3 5.5-1.366 5.5-6.04a4.567 4.567 0 0 0 -1.333 -3.21 4.192 4.192 0 00-.08-3.227s-1.05-.3-3.476 1.267a12.334 12.334 0 0 0 -6.222 0C6.462 2.723 5.413 3.023 5.413 3.023a4.192 4.192 0 0 0 -.08 3.227A4.566 4.566 0 004 9.486c0 4.64 2.709 5.68 5.5 6.014-.591.589-.56 1.183-.5 2V21" /></svg>
+                </a>
+                <a aria-label="Démo live (s'ouvre dans un nouvel onglet)" class="text-sky-300 hover:text-sky-400 transition-colors duration-300" href="https://nicomil59.github.io/react-tv" target="_blank">
+                  <svg class="h-5 w-5"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />  <polyline points="15 3 21 3 21 9" />  <line x1="10" y1="14" x2="21" y2="3" /></svg>
+                </a>
+              </div>
+              <a class="rounded-full px-3 py-2 text-xs text-center tracking-wider font-text font-medium text-neutral-900 border-2 border-sky-300 bg-sky-300 hover:bg-sky-400 hover:border-sky-400 transition-colors duration-300" href="#">En savoir plus</a>
+            </div>
+          </div>
+        </li>
+        <li class="flex items-center justify-between relative">
+          <a aria-label="Démo live (s'ouvre dans un nouvel onglet)" href="https://planningseries.fr/" target="_blank" class="w-3/5 hidden md:block rounded-lg hover:scale-[102px] transition duration-300">
+            <Image src={planningseries} alt="Capture d'écran du projet Planning Séries" class="rounded-lg hover:scale-105 transition duration-300 border-4 border-sky-500" />
+          </a>
+          <div class="w-full md:w-1/2 p-8 rounded-lg shadow bg-neutral-700/80 backdrop-blur-md flex flex-col md:absolute md:max-w-xl md:max-h-[340px] md:right-0">
+            <h3 class="mb-6 text-2xl font-title font-medium text-neutral-100 tracking-wide">Planning Séries</h3>
+            <p class="mb-6 font-text text-neutral-300">Calendrier de sorties des séries tv sur les chaînes et plateformes françaises conçu avec le framework Astro JS.</p>
+            <ul class="self-end flex items-center gap-2 mb-6">
+              <li>
+                <span class="text-xs font-text font-medium tracking-wide px-2.5 py-0.5 rounded bg-neutral-900 text-sky-300">astro</span>
+              </li>
+              <li>
+                <span class="text-xs font-text font-medium tracking-wide px-2.5 py-0.5 rounded bg-neutral-900 text-sky-300">tailwind css</span>
+              </li>
+              <li>
+                <span class="text-xs font-text font-medium tracking-wide px-2.5 py-0.5 rounded bg-neutral-900 text-sky-300">day.js</span>
+              </li>
+            </ul>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <a aria-label="GitHub (s'ouvre dans un nouvel onglet)" class="text-sky-300 hover:text-sky-400 transition-colors duration-300" href="https://github.com/nicomil59/planning-astro" target="_blank">
+                  <svg class="h-5 w-5"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M9 19c-4.286 1.35-4.286-2.55-6-3m12 5v-3.5c0-1 .099-1.405-.5-2 2.791-.3 5.5-1.366 5.5-6.04a4.567 4.567 0 0 0 -1.333 -3.21 4.192 4.192 0 00-.08-3.227s-1.05-.3-3.476 1.267a12.334 12.334 0 0 0 -6.222 0C6.462 2.723 5.413 3.023 5.413 3.023a4.192 4.192 0 0 0 -.08 3.227A4.566 4.566 0 004 9.486c0 4.64 2.709 5.68 5.5 6.014-.591.589-.56 1.183-.5 2V21" /></svg>
+                </a>
+                <a aria-label="Démo live (s'ouvre dans un nouvel onglet)" class="text-sky-300 hover:text-sky-400 transition-colors duration-300" href="https://planningseries.fr/" target="_blank">
                   <svg class="h-5 w-5"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />  <polyline points="15 3 21 3 21 9" />  <line x1="10" y1="14" x2="21" y2="3" /></svg>
                 </a>
               </div>
