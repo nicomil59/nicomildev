@@ -1,3 +1,5 @@
+import bookiCap from '../images/booki-capture.png';
+
 export const featuredProjects = [
   {
     title: "Instagrum",
@@ -45,3 +47,15 @@ export const featuredProjects = [
     pageUrl: "#",
   }
 ];
+
+export const projectInfo =   {
+  title: "Booki",
+  description:
+    "Intégration d'une maquette d'un outil de planification de vacances. Optimisé pour tous les formats d'écran.",
+  image: bookiCap,
+  imageAlt: "capture d'écran du projet Booki",
+  technos: ["html", "css"],
+  githubUrl: "https://github.com/nicomil59/NicolasMilhem_2_15112021",
+  demoUrl: "#",
+  pageUrl: "#",
+}
