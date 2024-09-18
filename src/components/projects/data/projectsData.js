@@ -1,4 +1,7 @@
 import bookiCap from '../images/booki-capture.png';
+import ohmyfoodCap from '../images/ohmyfood-capture.png';
+import piiquanteCap from '../images/piiquante-logo.png';
+import groupoCap from '../images/groupomania-logo.png';
 
 export const featuredProjects = [
   {
@@ -48,14 +51,49 @@ export const featuredProjects = [
   }
 ];
 
-export const projectInfo =   {
-  title: "Booki",
-  description:
-    "Intégration d'une maquette d'un outil de planification de vacances. Optimisé pour tous les formats d'écran.",
-  image: bookiCap,
-  imageAlt: "capture d'écran du projet Booki",
-  technos: ["html", "css"],
-  githubUrl: "https://github.com/nicomil59/NicolasMilhem_2_15112021",
-  demoUrl: "#",
-  pageUrl: "#",
-}
+export const otherProjects = [
+  {
+    title: "Booki",
+    description:
+      "Intégration d'une maquette d'un outil de planification de vacances. Optimisé pour tous les formats d'écran.",
+    image: bookiCap,
+    imageAlt: "capture d'écran du projet Booki",
+    technos: ["html", "css"],
+    githubUrl: "https://github.com/nicomil59/NicolasMilhem_2_15112021",
+    demoUrl: "#",
+    pageUrl: "#"
+  },
+  {
+    title: "Oh My Food",
+    description:
+      "Intégration des pages d'un site de restaurant avec des animations CSS réalisées avec le préprocesseur Sass.",
+    image: ohmyfoodCap,
+    imageAlt: "capture d'écran du projet Oh My Food",
+    technos: ["html", "css", "sass"],
+    githubUrl: "https://github.com/nicomil59/NicolasMilhem_3_03122021",
+    demoUrl: "https://nicomil59.github.io/NicolasMilhem_3_03122021/",
+    pageUrl: "#"
+  },
+  {
+    title: "Piiquante",
+    description:
+      "API pour une plateforme de partage de sauces. Authentification, CRUD sur les sauces, système de likes.",
+    image: piiquanteCap,
+    imageAlt: "capture d'écran du projet Piiquante",
+    technos: ["node.js", "express", "mongodb"],
+    githubUrl: "https://github.com/nicomil59/NicolasMilhem_6_23022022",
+    demoUrl: "#",
+    pageUrl: "#"
+  },
+  {
+    title: "Groupomania",
+    description:
+      "Réseau social d’une entreprise avec gestion des utilisateurs, des publications et des interactions (commentaires, likes).",
+    image: groupoCap,
+    imageAlt: "capture d'écran du projet Groupomania",
+    technos: ["vue", "bootstrap", "express", "mysql"],
+    githubUrl: "https://github.com/nicomil59/groupomania",
+    demoUrl: "#",
+    pageUrl: "#"
+  },
+]

@@ -1,6 +1,5 @@
 ---
-import { featuredProjects } from './data/projectsData';
-import { projectInfo } from './data/projectsData';
+import { featuredProjects, otherProjects } from './data/projectsData';
 import FeaturedProjectCard from './FeaturedProjectCard.astro';
 import StandardProjectCard from './StandardProjectCard.astro';
 ---
@@ -18,12 +17,7 @@ import StandardProjectCard from './StandardProjectCard.astro';
       <h3 class="text-2xl md:text-3xl font-title font-medium text-neutral-100 tracking-wide mb-8 md:mb-16">projets de formation</h3>
 
       <ul class="flex flex-col md:flex-row flex-wrap items-center justify-center gap-12 md:gap-24">
-
-        <StandardProjectCard {...projectInfo} />
-
+        {otherProjects.map(project => <StandardProjectCard {...project} />)}
       </ul>
     </div>
-    
-    
-   
 </section>
