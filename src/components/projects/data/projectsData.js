@@ -1,3 +1,6 @@
+import instagrumCap from '../images/instagrum-capture.png';
+import reacttvCap from '../images/react-tv-capture.png';
+import planningCap from '../images/planning-series-capture.png';
 import bookiCap from '../images/booki-capture.png';
 import ohmyfoodCap from '../images/ohmyfood-capture.png';
 import piiquanteCap from '../images/piiquante-logo.png';
@@ -8,12 +11,8 @@ export const featuredProjects = [
     title: "Instagrum",
     description:
       "Clone d’une page profil Instagram développé avec React. Mise en œuvre d'une UI responsive qui respecte l'esthétique du réseau social.",
-    image: {
-      src: "instagrum-capture.png",
-      alt: "Capture d'écran du projet Instagrum",
-      width: "700",
-      height: "400"
-    },
+    image: instagrumCap,
+    imageAlt: "Capture d'écran du projet Instagrum",
     technos: ["react", "styled components"],
     githubUrl: "https://github.com/nicomil59/instagrum",
     demoUrl: "https://instagrum.vercel.app/",
@@ -23,12 +22,8 @@ export const featuredProjects = [
     title: "React TV",
     description:
       "Application permettant de rechercher des séries TV dans une base de données externe via une API et de sauvegarder ses titres favoris.",
-    image: {
-      src: "react-tv-capture.png",
-      alt: "Capture d'écran du projet React TV",
-      width: "700",
-      height: "400"
-    },
+    image: reacttvCap,
+    imageAlt: "Capture d'écran du projet React TV",
     technos: ["react", "sass", "axios"],
     githubUrl: "https://github.com/nicomil59/react-tv",
     demoUrl: "https://nicomil59.github.io/react-tv",
@@ -38,12 +33,8 @@ export const featuredProjects = [
     title: "Planning Séries",
     description:
       "Calendrier des sorties des séries TV sur les chaînes et plateformes françaises, conçu avec le framework Astro JS.",
-    image: {
-      src: "planning-series-capture.png",
-      alt: "Capture d'écran du projet Planning Séries",
-      width: "700",
-      height: "400"
-    },
+    image: planningCap,
+    imageAlt: "Capture d'écran du projet Planning Séries",
     technos: ["astro", "tailwind css", "day.js"],
     githubUrl: "https://github.com/nicomil59/planning-astro",
     demoUrl: "https://planningseries.fr/",

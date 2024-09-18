@@ -1,14 +1,13 @@
 ---
 import { Image } from 'astro:assets';
 
-const { image, title, description, technos, githubUrl, demoUrl, pageUrl } = Astro.props;
+const { image, imageAlt, title, description, technos, githubUrl, demoUrl, pageUrl } = Astro.props;
 
-const importedImage = await import(`../projects/images/${image.src}`);
 ---
 
 <li class="flex items-center justify-between relative">
     <a aria-label="Démo live (s'ouvre dans un nouvel onglet)" href={demoUrl} target="_blank" class="w-3/5 hidden md:block rounded-lg hover:scale-[102px] transition duration-300">
-      <Image src={importedImage.default}} alt={image.alt} class="rounded-lg hover:scale-105 transition duration-300 border-4 border-sky-500" />
+      <Image src={image}} alt={imageAlt} class="rounded-lg hover:scale-105 transition duration-300 border-4 border-sky-500" />
     </a>
     <div class="w-full md:w-1/2 p-8 rounded-lg shadow bg-neutral-700/80 backdrop-blur-md flex flex-col md:absolute md:max-w-xl md:max-h-[340px] md:right-0">
       <h3 class="mb-6 text-2xl font-title font-medium text-neutral-100 tracking-wide">{title}</h3>
