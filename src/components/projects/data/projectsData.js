@@ -16,7 +16,7 @@ export const featuredProjects = [
     technos: ["react", "styled components"],
     githubUrl: "https://github.com/nicomil59/instagrum",
     demoUrl: "https://instagrum.vercel.app/",
-    pageUrl: "#",
+    pageUrl: "projects/instagrum",
   },
   {
     title: "React TV",

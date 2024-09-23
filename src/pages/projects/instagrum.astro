@@ -1,0 +1,118 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { Image } from 'astro:assets';
+import instagrumDesktop from '../../components/projects/images/instagrum/instagrum-desktop.png';
+import instagrumMobile from '../../components/projects/images/instagrum/instagrum-mobile.png';
+
+const pageTitle = "Instagrum";
+---
+
+<Layout pageTitle={pageTitle}>
+    <article class="max-w-6xl m-auto px-4 text-white py-10 md:py-16">
+        <h1 class="font-title font-bold tracking-wider text-4xl md:text-6xl text-neutral-100 mb-6 md:mb-12">{pageTitle}</h1>
+        <p class="lg:max-w-3xl font-text md:text-lg text-neutral-400 mb-8">Clone d’une page profil Instagram développé avec React. Mise en œuvre d'une UI responsive qui respecte l'esthétique du réseau social.</p>
+        
+        <div class="relative overflow-x-auto max-w-3xl mb-12">
+            <table class="w-full font-text text-sm text-left text-neutral-400">
+                <thead class="uppercase text-xs text-neutral-100">
+                    <tr>
+                        <th scope="col" class="px-6 py-3">
+                            Stack
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Code
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Démo
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="">
+                        <td class="px-6 py-2">
+                            React
+                        </td>
+                        <td class="px-6 py-2">
+                            <a aria-label="GitHub (s'ouvre dans un nouvel onglet)" class="text-sky-300 hover:text-sky-400 transition-colors duration-300" href="https://github.com/nicomil59/instagrum" target="_blank">
+                                <svg class="h-5 w-5"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M9 19c-4.286 1.35-4.286-2.55-6-3m12 5v-3.5c0-1 .099-1.405-.5-2 2.791-.3 5.5-1.366 5.5-6.04a4.567 4.567 0 0 0 -1.333 -3.21 4.192 4.192 0 00-.08-3.227s-1.05-.3-3.476 1.267a12.334 12.334 0 0 0 -6.222 0C6.462 2.723 5.413 3.023 5.413 3.023a4.192 4.192 0 0 0 -.08 3.227A4.566 4.566 0 004 9.486c0 4.64 2.709 5.68 5.5 6.014-.591.589-.56 1.183-.5 2V21" /></svg>
+                              </a>
+                        </td>
+                        <td class="px-6 py-2">
+                            <a aria-label="Démo live (s'ouvre dans un nouvel onglet)" class="text-sky-300 hover:text-sky-400 transition-colors duration-300" href="https://instagrum.vercel.app/" target="_blank">
+                                <svg class="h-5 w-5"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />  <polyline points="15 3 21 3 21 9" />  <line x1="10" y1="14" x2="21" y2="3" /></svg>
+                              </a>
+                        </td>
+                    </tr>
+                    <tr class="">
+                        <td class="px-6 py-2">
+                            Styled Components
+                        </td>
+                    </tr>
+                    <tr class="">
+                        <td class="px-6 py-2">
+                            React Icons
+                        </td>
+                    </tr>
+                    <tr class="">
+                        <td class="px-6 py-2">
+                            Vite
+                        </td>
+                    </tr>
+                    <tr class="">
+                        <td class="px-6 py-2">
+                            Vercel
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <Image src={instagrumDesktop} alt="Instagrum en version desktop" class="rounded mb-8" /> 
+        
+        <div class="flex flex-col mb-8 md:mb-12">
+            <section class="py-8 md:py-12">
+                <h2 class="text-3xl md:text-4xl font-medium text-neutral-100 tracking-wide mb-8 md:mb-16 flex items-center gap-2 md:gap-4"><svg class="h-8 w-8 md:h-10 md:w-10 text-sky-300 hover:rotate-2 transition duration-300"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="5" cy="5" r="1" />  <circle cx="12" cy="5" r="1" />  <circle cx="19" cy="5" r="1" />  <circle cx="5" cy="12" r="1" />  <circle cx="12" cy="12" r="1" />  <circle cx="19" cy="12" r="1" />  <circle cx="5" cy="19" r="1" />  <circle cx="12" cy="19" r="1" />  <circle cx="19" cy="19" r="1" /></svg><span>objectif</span></h2>
+                <p class="font-text text-neutral-400 max-w-3xl leading-relaxed">L'objectif de ce projet était double : d'une part, recréer fidèlement le design d'une page profil Instagram en respectant chaque détail, et d'autre part, exploiter la puissance de React pour structurer l'application en composants, en segmentant les différentes sections de manière claire et modulaire.</p>
+            </section>
+            
+            <section class="py-8 md:py-12 self-end flex flex-col">
+                <h2 class="text-3xl md:text-4xl font-medium text-neutral-100 tracking-wide mb-8 md:mb-16 flex items-center gap-2 md:gap-4 self-end"><svg class="h-8 w-8 md:h-10 md:w-10 text-sky-300 hover:rotate-2 transition duration-300"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="5" cy="5" r="1" />  <circle cx="12" cy="5" r="1" />  <circle cx="19" cy="5" r="1" />  <circle cx="5" cy="12" r="1" />  <circle cx="12" cy="12" r="1" />  <circle cx="19" cy="12" r="1" />  <circle cx="5" cy="19" r="1" />  <circle cx="12" cy="19" r="1" />  <circle cx="19" cy="19" r="1" /></svg><span>fonctionnalités</span></h2>
+                <ul class="font-text text-neutral-400 max-w-3xl leading-relaxed">
+                    <li class="flex items-center gap-4">
+                        <svg class="h-8 w-8 text-sky-300"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"/>
+                        </svg>
+                        <span>Design responsive pour une navigation fluide sur tous les types d’écran : mobile, tablette et desktop.</span>
+                    </li>
+                    <li class="flex items-center gap-4">
+                        <svg class="h-8 w-8 text-sky-300"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"/>
+                        </svg>
+                        <span>Navigation par onglets des différentes catégories (posts, reels, tagged).</span>
+                    </li>
+                </ul>
+            </section>
+            
+            <section class="py-8 md:py-12">
+                <h2 class="text-3xl md:text-4xl font-medium text-neutral-100 tracking-wide mb-8 md:mb-16 flex items-center gap-2 md:gap-4"><svg class="h-8 w-8 md:h-10 md:w-10 text-sky-300 hover:rotate-2 transition duration-300"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="5" cy="5" r="1" />  <circle cx="12" cy="5" r="1" />  <circle cx="19" cy="5" r="1" />  <circle cx="5" cy="12" r="1" />  <circle cx="12" cy="12" r="1" />  <circle cx="19" cy="12" r="1" />  <circle cx="5" cy="19" r="1" />  <circle cx="12" cy="19" r="1" />  <circle cx="19" cy="19" r="1" /></svg><span>choix des technos</span></h2>
+                <p class="font-text text-neutral-400 max-w-3xl leading-relaxed mb-4">En m'appuyant sur plusieurs captures d'écran du site original, j'ai segmenté les différentes sections de la page. Cela m'a permis d'obtenir une vue d'ensemble claire des composants à développer pour chaque partie de l'interface.</p>
+                <p class="font-text text-neutral-400 max-w-3xl leading-relaxed">Avec la bibliothèque CSS-in-JS Styled Components, j'ai pu styliser mes composants directement dans le code React, ce qui a rendu le processus plus fluide et modulable. En utilisant un design system pour gérer les couleurs et les polices, j'ai aussi pu assurer une cohérence visuelle tout au long du projet et simplifier la maintenance du style.</p>
+            </section>
+
+            <figure class="self-center my-8">
+                <Image src={instagrumMobile} alt="Instagrum en version mobile" class="rounded" /> 
+                <figcaption class="font-text text-sm text-neutral-100 mt-1">Capture d'écran de la version mobile</figcaption>
+            </figure>
+    
+            <section class="py-8 md:py-12 self-end flex flex-col">
+                <h2 class="text-3xl md:text-4xl font-medium text-neutral-100 tracking-wide mb-8 md:mb-16 flex items-center gap-2 md:gap-4 self-end"><svg class="h-8 w-8 md:h-10 md:w-10 text-sky-300 hover:rotate-2 transition duration-300"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="5" cy="5" r="1" />  <circle cx="12" cy="5" r="1" />  <circle cx="19" cy="5" r="1" />  <circle cx="5" cy="12" r="1" />  <circle cx="12" cy="12" r="1" />  <circle cx="19" cy="12" r="1" />  <circle cx="5" cy="19" r="1" />  <circle cx="12" cy="19" r="1" />  <circle cx="19" cy="19" r="1" /></svg><span>défis techniques</span></h2>
+                <p class="font-text text-neutral-400 max-w-3xl leading-relaxed mb-4">Dans ce projet, React est utilisé de manière simple, principalement pour organiser l'application en composants réutilisables et transmettre les données via les props. La seule gestion d'état intervient avec le système d'onglets, mis en place grâce au hook useState.</p>
+                <p class="font-text text-neutral-400 max-w-3xl leading-relaxed">En effet, là où en Vanilla JS on manipule directement le DOM en ajoutant ou supprimant des classes pour gérer l'onglet actif, React propose une approche plus simple et efficace : on utilise l'état pour suivre l'onglet sélectionné et afficher dynamiquement le contenu correspondant, ce qui permet une mise à jour fluide de l'interface utilisateur sans rechargement de la page.</p>
+            </section>
+
+        </div>
+
+        <a class="rounded-full text-sm px-3 py-2 md:px-5 md:py-2.5 text-center tracking-wider font-semibold text-neutral-900 border-2 border-sky-300 bg-sky-300 hover:bg-sky-400 hover:border-sky-400 transition-colors duration-300 inline-flex items-center gap-2" href="/#projects"><svg class="h-6 w-6 text-neutral-900"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="5" y1="12" x2="19" y2="12" />  <line x1="5" y1="12" x2="9" y2="16" />  <line x1="5" y1="12" x2="9" y2="8" /></svg>Retour à la liste</a>
+        
+    </article>
+</Layout>
