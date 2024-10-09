@@ -27,7 +27,7 @@ export const featuredProjects = [
     technos: ["react", "sass", "axios"],
     githubUrl: "https://github.com/nicomil59/react-tv",
     demoUrl: "https://nicomil59.github.io/react-tv",
-    pageUrl: "#",
+    pageUrl: "projects/react-tv",
   },
   {
     title: "Planning Séries",
@@ -38,7 +38,7 @@ export const featuredProjects = [
     technos: ["astro", "tailwind css", "day.js"],
     githubUrl: "https://github.com/nicomil59/planning-astro",
     demoUrl: "https://planningseries.fr/",
-    pageUrl: "#",
+    pageUrl: "projects/planningseries",
   }
 ];
 

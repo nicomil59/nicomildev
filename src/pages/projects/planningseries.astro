@@ -1,0 +1,133 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { Image } from 'astro:assets';
+import psDesktop from '../../components/projects/images/planning-series/planning-series-desktop.png';
+import psMobile from '../../components/projects/images/planning-series/planning-series-mobile.png';
+import psCode from '../../components/projects/images/planning-series/planning-series-code.png';
+
+const pageTitle = "Planning Séries";
+---
+
+<Layout pageTitle={pageTitle}>
+    <article class="max-w-6xl m-auto px-4 text-white py-10 md:py-16">
+        <h1 class="font-title font-bold tracking-wider text-4xl md:text-6xl text-neutral-100 mb-6 md:mb-12">{pageTitle}</h1>
+        <p class="lg:max-w-3xl font-text md:text-lg text-neutral-400 mb-8">Calendrier des sorties des séries TV sur les chaînes et plateformes françaises, conçu avec le framework Astro JS.</p>
+        
+        <div class="relative overflow-x-auto max-w-3xl mb-12">
+            <table class="w-full font-text text-sm text-left text-neutral-400">
+                <thead class="uppercase text-xs text-neutral-100">
+                    <tr>
+                        <th scope="col" class="px-6 py-3">
+                            Stack
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Code
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Démo
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="">
+                        <td class="px-6 py-2">
+                            Astro JS
+                        </td>
+                        <td class="px-6 py-2">
+                            <a aria-label="GitHub (s'ouvre dans un nouvel onglet)" class="text-sky-300 hover:text-sky-400 transition-colors duration-300" href="https://github.com/nicomil59/planning-astro" target="_blank">
+                                <svg class="h-5 w-5"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M9 19c-4.286 1.35-4.286-2.55-6-3m12 5v-3.5c0-1 .099-1.405-.5-2 2.791-.3 5.5-1.366 5.5-6.04a4.567 4.567 0 0 0 -1.333 -3.21 4.192 4.192 0 00-.08-3.227s-1.05-.3-3.476 1.267a12.334 12.334 0 0 0 -6.222 0C6.462 2.723 5.413 3.023 5.413 3.023a4.192 4.192 0 0 0 -.08 3.227A4.566 4.566 0 004 9.486c0 4.64 2.709 5.68 5.5 6.014-.591.589-.56 1.183-.5 2V21" /></svg>
+                              </a>
+                        </td>
+                        <td class="px-6 py-2">
+                            <a aria-label="Démo live (s'ouvre dans un nouvel onglet)" class="text-sky-300 hover:text-sky-400 transition-colors duration-300" href="https://planningseries.fr/" target="_blank">
+                                <svg class="h-5 w-5"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />  <polyline points="15 3 21 3 21 9" />  <line x1="10" y1="14" x2="21" y2="3" /></svg>
+                              </a>
+                        </td>
+                    </tr>
+                    <tr class="">
+                        <td class="px-6 py-2">
+                            Tailwind CSS
+                        </td>
+                    </tr>
+                    <tr class="">
+                        <td class="px-6 py-2">
+                            Day.js
+                        </td>
+                    </tr>
+                    <tr class="">
+                        <td class="px-6 py-2">
+                            Vercel
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <Image src={psDesktop} alt="Planning Séries en version desktop" class="rounded mb-8" /> 
+        
+        <div class="flex flex-col mb-8 md:mb-12">
+            <section class="py-8 md:py-12">
+                <h2 class="text-3xl md:text-4xl font-medium text-neutral-100 tracking-wide mb-8 md:mb-16 flex items-center gap-2 md:gap-4"><svg class="h-8 w-8 md:h-10 md:w-10 text-sky-300 hover:rotate-2 transition duration-300"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="5" cy="5" r="1" />  <circle cx="12" cy="5" r="1" />  <circle cx="19" cy="5" r="1" />  <circle cx="5" cy="12" r="1" />  <circle cx="12" cy="12" r="1" />  <circle cx="19" cy="12" r="1" />  <circle cx="5" cy="19" r="1" />  <circle cx="12" cy="19" r="1" />  <circle cx="19" cy="19" r="1" /></svg><span>objectif</span></h2>
+                <p class="font-text text-neutral-400 max-w-3xl leading-relaxed">Après plusieurs années à gérer un calendrier des sorties de séries TV sur une page de mon site Séries TV News (développé sous WordPress), j'ai souhaité créer un site entièrement dédié à cette fonctionnalité. L'objectif est de proposer sur une page unique (et optimisée pour un chargement rapide) toutes les dates de diffusion des séries disponibles sur les plateformes françaises.</p>
+            </section>
+            
+            <section class="py-8 md:py-12 self-end flex flex-col">
+                <h2 class="text-3xl md:text-4xl font-medium text-neutral-100 tracking-wide mb-8 md:mb-16 flex items-center gap-2 md:gap-4 self-end"><svg class="h-8 w-8 md:h-10 md:w-10 text-sky-300 hover:rotate-2 transition duration-300"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="5" cy="5" r="1" />  <circle cx="12" cy="5" r="1" />  <circle cx="19" cy="5" r="1" />  <circle cx="5" cy="12" r="1" />  <circle cx="12" cy="12" r="1" />  <circle cx="19" cy="12" r="1" />  <circle cx="5" cy="19" r="1" />  <circle cx="12" cy="19" r="1" />  <circle cx="19" cy="19" r="1" /></svg><span>fonctionnalités</span></h2>
+                <ul class="font-text text-neutral-400 max-w-3xl leading-relaxed">
+                    <li class="flex items-center gap-4">
+                        <svg class="h-8 w-8 text-sky-300"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"/>
+                        </svg>
+                        <span>Calendrier quotidien des sorties de séries.</span>
+                    </li>
+                    <li class="flex items-center gap-4">
+                        <svg class="h-8 w-8 text-sky-300"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"/>
+                        </svg>
+                        <span>Liste des derniers ajouts au calendrier.</span>
+                    </li>
+                    <li class="flex items-center gap-4">
+                        <svg class="h-8 w-8 text-sky-300"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"/>
+                        </svg>
+                        <span>Formulaire de contact pour les utilisateurs.</span>
+                    </li>
+                    <li class="flex items-center gap-4">
+                        <svg class="h-8 w-8 text-sky-300"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"/>
+                        </svg>
+                        <span>Choix light/dark mode.</span>
+                    </li>
+                </ul>
+            </section>
+            
+            <section class="py-8 md:py-12">
+                <h2 class="text-3xl md:text-4xl font-medium text-neutral-100 tracking-wide mb-8 md:mb-16 flex items-center gap-2 md:gap-4"><svg class="h-8 w-8 md:h-10 md:w-10 text-sky-300 hover:rotate-2 transition duration-300"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="5" cy="5" r="1" />  <circle cx="12" cy="5" r="1" />  <circle cx="19" cy="5" r="1" />  <circle cx="5" cy="12" r="1" />  <circle cx="12" cy="12" r="1" />  <circle cx="19" cy="12" r="1" />  <circle cx="5" cy="19" r="1" />  <circle cx="12" cy="19" r="1" />  <circle cx="19" cy="19" r="1" /></svg><span>choix des technos</span></h2>
+
+                <div class="font-text text-neutral-400 max-w-3xl leading-relaxed">
+                    <p class="mb-4">Pour le développement de Planning Séries, j'ai choisi le framework <strong>Astro JS</strong> en raison de sa facilité de prise en main et de ses performances exceptionnelles. Grâce à la génération de pages HTML statiques, le site bénéficie de temps de chargement ultra-rapides, ce qui améliore considérablement l'expérience utilisateur. De plus, en minimisant l'utilisation de JavaScript côté client, Astro JS allège le poids des pages, garantissant des performances optimales. Cette approche contribue également à un meilleur référencement naturel (SEO), les moteurs de recherche favorisant les sites rapides..</p>
+                    <p class="mb-4">Pour le style, j'ai opté pour <strong>Tailwind CSS</strong>, qui permet de concevoir rapidement un design personnalisé grâce à ses classes CSS réutilisables. Cette approche garantit une cohérence stylistique à travers tout le projet, tout en simplifiant la gestion du CSS. Ensemble, le duo Astro JS et Tailwind CSS m'a permis de créer un site performant, à la fois rapide et visuellement harmonieux, en un temps réduit.</p>
+                </div>
+
+            </section>
+
+            <figure class="self-center my-8">
+                <Image src={psMobile} alt="Planning séries en version mobile et dark" class="rounded" /> 
+                <figcaption class="font-text text-sm text-neutral-100 mt-1">Capture d'écran de la version mobile et dark</figcaption>
+            </figure>
+    
+            <section class="py-8 md:py-12 self-end flex flex-col">
+                <h2 class="text-3xl md:text-4xl font-medium text-neutral-100 tracking-wide mb-8 md:mb-16 flex items-center gap-2 md:gap-4 self-end"><svg class="h-8 w-8 md:h-10 md:w-10 text-sky-300 hover:rotate-2 transition duration-300"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="5" cy="5" r="1" />  <circle cx="12" cy="5" r="1" />  <circle cx="19" cy="5" r="1" />  <circle cx="5" cy="12" r="1" />  <circle cx="12" cy="12" r="1" />  <circle cx="19" cy="12" r="1" />  <circle cx="5" cy="19" r="1" />  <circle cx="12" cy="19" r="1" />  <circle cx="19" cy="19" r="1" /></svg><span>défis techniques</span></h2>
+                <div class="font-text text-neutral-400 max-w-3xl leading-relaxed">
+                    <p class="mb-4">Les données des programmes sont fournis par un fichier json (shows.json) produit en local à partir d’un tableau de Notion (l’application de prise de notes) et chaque programme est représenté par un objet avec ses différentes propriétés (date, heure, titre, plateforme, etc.). L’un des défis offert par la création du calendrier est de regrouper les séries par date puis par plateforme (au sein d’une même date).</p>
+                    <p class="mb-8">Pour y parvenir, j'ai développé une fonction JavaScript spécifique nommée <code>getShowsByDate</code>. Celle-ci prend en entrée toutes les données et renvoie une liste de séries organisées par date. La solution consiste à utiliser la date de diffusion comme clé, avec une liste des séries correspondantes comme valeur. Ce même principe est appliqué pour regrouper les séries par plateforme.</p>
+                    <Image src={psCode} alt="Le code de la fonction getShowsByDate" class="rounded" />
+                </div>
+            </section>
+
+        </div>
+
+        <a class="rounded-full text-sm px-3 py-2 md:px-5 md:py-2.5 text-center tracking-wider font-semibold text-neutral-900 border-2 border-sky-300 bg-sky-300 hover:bg-sky-400 hover:border-sky-400 transition-colors duration-300 inline-flex items-center gap-2" href="/#projects"><svg class="h-6 w-6 text-neutral-900"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="5" y1="12" x2="19" y2="12" />  <line x1="5" y1="12" x2="9" y2="16" />  <line x1="5" y1="12" x2="9" y2="8" /></svg>Retour à la liste</a>
+        
+    </article>
+</Layout>
