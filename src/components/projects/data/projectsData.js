@@ -52,7 +52,7 @@ export const otherProjects = [
     technos: ["html", "css"],
     githubUrl: "https://github.com/nicomil59/NicolasMilhem_2_15112021",
     demoUrl: "#",
-    pageUrl: "#"
+    pageUrl: "projects/booki"
   },
   {
     title: "Oh My Food",
@@ -63,7 +63,7 @@ export const otherProjects = [
     technos: ["html", "css", "sass"],
     githubUrl: "https://github.com/nicomil59/NicolasMilhem_3_03122021",
     demoUrl: "https://nicomil59.github.io/NicolasMilhem_3_03122021/",
-    pageUrl: "#"
+    pageUrl: "projects/ohmyfood"
   },
   {
     title: "Piiquante",
@@ -74,7 +74,7 @@ export const otherProjects = [
     technos: ["node.js", "express", "mongodb"],
     githubUrl: "https://github.com/nicomil59/NicolasMilhem_6_23022022",
     demoUrl: "#",
-    pageUrl: "#"
+    pageUrl: "projects/piiquante"
   },
   {
     title: "Groupomania",
@@ -85,6 +85,6 @@ export const otherProjects = [
     technos: ["vue", "bootstrap", "express", "mysql"],
     githubUrl: "https://github.com/nicomil59/groupomania",
     demoUrl: "#",
-    pageUrl: "#"
+    pageUrl: "projects/groupomania"
   },
 ]
