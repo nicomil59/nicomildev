@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import avatar from './images/avatar.png';
 ---
 
@@ -28,6 +29,7 @@ import avatar from './images/avatar.png';
     </div>
   </div>
   <div class="mb-8 lg:mb-0" id="hero-img">
-    <img class="w-24 h-24 md:w-36 md:h-36 lg:w-80 lg:h-80" src={avatar.src} alt="Avatar">
+    <!-- <img class="w-24 h-24 md:w-36 md:h-36 lg:w-80 lg:h-80" src={avatar.src} alt="Avatar"> -->
+    <Image class="w-24 h-24 md:w-36 md:h-36 lg:w-80 lg:h-80" src={avatar} alt="Avatar" loading="eager" />
   </div>
 </section>
