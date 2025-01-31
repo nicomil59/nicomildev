@@ -21,9 +21,11 @@ const { image, imageAlt, title, description, technos, githubUrl, demoUrl, pageUr
           <a aria-label="GitHub (s'ouvre dans un nouvel onglet)" class="text-sky-300 hover:text-sky-400 transition-colors duration-300" href={githubUrl} target="_blank">
             <svg class="h-5 w-5"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M9 19c-4.286 1.35-4.286-2.55-6-3m12 5v-3.5c0-1 .099-1.405-.5-2 2.791-.3 5.5-1.366 5.5-6.04a4.567 4.567 0 0 0 -1.333 -3.21 4.192 4.192 0 00-.08-3.227s-1.05-.3-3.476 1.267a12.334 12.334 0 0 0 -6.222 0C6.462 2.723 5.413 3.023 5.413 3.023a4.192 4.192 0 0 0 -.08 3.227A4.566 4.566 0 004 9.486c0 4.64 2.709 5.68 5.5 6.014-.591.589-.56 1.183-.5 2V21" /></svg>
           </a>
-          <a aria-label="Démo live (s'ouvre dans un nouvel onglet)" class="text-sky-300 hover:text-sky-400 transition-colors duration-300" href={demoUrl} target="_blank">
-            <svg class="h-5 w-5"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />  <polyline points="15 3 21 3 21 9" />  <line x1="10" y1="14" x2="21" y2="3" /></svg>
-          </a>
+          {demoUrl === "#" ? "" : (
+            <a aria-label="Démo live (s'ouvre dans un nouvel onglet)" class="text-sky-300 hover:text-sky-400 transition-colors duration-300" href={demoUrl} target="_blank">
+              <svg class="h-5 w-5"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />  <polyline points="15 3 21 3 21 9" />  <line x1="10" y1="14" x2="21" y2="3" /></svg>
+            </a>
+          )}
         </div>
         <a class="rounded-full px-2.5 py-1.5 text-xs text-center tracking-wider font-text font-medium text-neutral-900 border-2 border-sky-300 bg-sky-300 hover:bg-sky-400 hover:border-sky-400 transition-colors duration-300" href={pageUrl}>Voir plus</a>
       </div>
