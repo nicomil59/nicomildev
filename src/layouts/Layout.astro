@@ -1,4 +1,6 @@
 ---
+import { SEO } from "astro-seo";
+
 import '@fontsource/roboto';
 
 // Supports weights 200-900
@@ -9,18 +11,53 @@ import Header from "../components/header/Header.astro";
 
 import { ViewTransitions } from 'astro:transitions';
 
-const { pageTitle } = Astro.props;
+const { pageTitle, pageDescription, pageTitleOG, OGType } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="fr">
 	<head>
+
+		<!-- Astro SEO code -->
+		<SEO
+		title={pageTitle}
+		description={pageDescription}
+		canonical={`https://nicomil.dev${Astro.url.pathname}`}
+		openGraph={{
+			basic: {
+			title: `${pageTitleOG}`,
+			type: `${OGType}`,
+			image: "/ndev-card1.png",
+			url: "https://nicomil.dev/",
+			},
+			optional: {
+			siteName: "Nicolas Milhem",
+			description: "Portfolio de Nicolas Milhem, développeur front-end dans le Nord.",
+			},
+		}}
+		twitter={{
+			creator: "@nicomildev"
+		}}
+		extend={{
+			// extending the default meta tags
+			meta: [
+			{ name: "twitter:card", content: "summary_large_image" },
+			{ name: "twitter:site", content: "@nicomildev" },
+			{ name: "twitter:title", content: `${pageTitleOG}` },
+			{ name: "twitter:image",content: "https://planningseries.fr/ndev-card2.png" },
+			{ name: "twitter:imageAlt",content: "Nicolas Milhem web dev card" },
+			{ name: "twitter:description", content: "Portfolio de Nicolas Milhem" }
+			],
+		}}
+		/>
+
+
 		<meta charset="UTF-8" />
-		<meta name="description" content="Portfolio de Nicolas Milhem, développeur front-end dans le Nord." />
-		<meta name="viewport" content="width=device-width" />
+		<!-- <meta name="description" content="Portfolio de Nicolas Milhem, développeur front-end dans le Nord." />
+		<meta name="viewport" content="width=device-width" /> -->
 		<link rel="icon" href="/favicon.ico" type="image/x-icon">
 		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
+		<!-- <title>{pageTitle}</title> -->
 		<ViewTransitions fallback="none"/>
 	</head>
 	<body class="bg-neutral-900">

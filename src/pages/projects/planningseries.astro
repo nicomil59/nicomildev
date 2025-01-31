@@ -5,10 +5,13 @@ import psDesktop from '../../components/projects/images/planning-series/planning
 import psMobile from '../../components/projects/images/planning-series/planning-series-mobile.png';
 import psCode from '../../components/projects/images/planning-series/planning-series-code.png';
 
-const pageTitle = "Planning Séries";
+const pageTitle = "Le site Planning Séries";
+const pageDescription = "Réalisation d'un site sur les sorties de séries tv en France, avec Astro JS et Tailwind CSS";
+const pageTitleOG = "Projet Planning Séries";
+const OGType = "article";
 ---
 
-<Layout pageTitle={pageTitle}>
+<Layout pageTitle={pageTitle} pageDescription={pageDescription} pageTitleOG={pageTitleOG} OGType={OGType}>
     <article class="max-w-6xl m-auto px-4 text-white py-10 md:py-16">
         <h1 class="font-title font-bold tracking-wider text-4xl md:text-6xl text-neutral-100 mb-6 md:mb-12">{pageTitle}</h1>
         <p class="lg:max-w-3xl font-text md:text-lg text-neutral-400 mb-8">Calendrier des sorties des séries TV sur les chaînes et plateformes françaises, conçu avec le framework Astro JS.</p>

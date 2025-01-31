@@ -4,10 +4,13 @@ import { Image } from 'astro:assets';
 import reacttvDesktop from '../../components/projects/images/react-tv/react-tv-desktop.png';
 import reacttvMobile from '../../components/projects/images/react-tv/react-tv-mobile.png';
 
-const pageTitle = "React TV";
+const pageTitle = "Projet React TV";
+const pageDescription = "Application React de recherche et mise en favori de séries tv à partir d'une base de données externe";
+const pageTitleOG = "Projet React TV";
+const OGType = "article";
 ---
 
-<Layout pageTitle={pageTitle}>
+<Layout pageTitle={pageTitle} pageDescription={pageDescription} pageTitleOG={pageTitleOG} OGType={OGType}>
     <article class="max-w-6xl m-auto px-4 text-white py-10 md:py-16">
         <h1 class="font-title font-bold tracking-wider text-4xl md:text-6xl text-neutral-100 mb-6 md:mb-12">{pageTitle}</h1>
         <p class="lg:max-w-3xl font-text md:text-lg text-neutral-400 mb-8">Application permettant de rechercher des séries TV dans une base de données externe via une API et de sauvegarder ses titres favoris.</p>

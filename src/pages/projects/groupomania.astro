@@ -2,10 +2,13 @@
 import Layout from "../../layouts/Layout.astro";
 import { Image } from 'astro:assets';
 
-const pageTitle = "Groupomania";
+const pageTitle = "Projet Groupomania";
+const pageDescription = "Réalisation d'un réseau social d'entreprise - front-end avec Vue.js et back-end avec Express et MySQL";
+const pageTitleOG = "Projet Groupomania";
+const OGType = "article";
 ---
 
-<Layout pageTitle={pageTitle}>
+<Layout pageTitle={pageTitle} pageDescription={pageDescription} pageTitleOG={pageTitleOG} OGType={OGType}>
     <article class="max-w-6xl m-auto px-4 text-white py-10 md:py-16">
         <h1 class="font-title font-bold tracking-wider text-4xl md:text-6xl text-neutral-100 mb-6 md:mb-12">{pageTitle}</h1>
         <p class="lg:max-w-3xl font-text md:text-lg text-neutral-400 mb-8">Réseau social d’une entreprise avec gestion des utilisateurs, des publications et des interactions (commentaires, likes).</p>

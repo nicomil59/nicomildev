@@ -2,10 +2,13 @@
 import Layout from "../../layouts/Layout.astro";
 import { Image } from 'astro:assets';
 
-const pageTitle = "Booki";
+const pageTitle = "Projet Booki";
+const pageDescription = "Intégration HTML et CSS d'un outil de planification de vacances";
+const pageTitleOG = "Projet Booki";
+const OGType = "article";
 ---
 
-<Layout pageTitle={pageTitle}>
+<Layout pageTitle={pageTitle} pageDescription={pageDescription} pageTitleOG={pageTitleOG} OGType={OGType}>
     <article class="max-w-6xl m-auto px-4 text-white py-10 md:py-16">
         <h1 class="font-title font-bold tracking-wider text-4xl md:text-6xl text-neutral-100 mb-6 md:mb-12">{pageTitle}</h1>
         <p class="lg:max-w-3xl font-text md:text-lg text-neutral-400 mb-8">Intégration d'une maquette d'un outil de planification de vacances. Optimisé pour tous les formats d'écran.</p>

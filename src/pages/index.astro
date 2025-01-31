@@ -9,9 +9,12 @@ import Contact from '../components/Contact.astro';
 import { fade } from 'astro:transitions';
 
 const pageTitle = "Nicolas Milhem - Développeur web"
+const pageDescription = "Portfolio de Nicolas Milhem, développeur front-end dans le Nord";
+const pageTitleOG = "Portfolio de Nicolas Milhem, développeur web";
+const OGType = "website";
 ---
 
-<Layout pageTitle={pageTitle}>
+<Layout pageTitle={pageTitle} pageDescription={pageDescription} pageTitleOG={pageTitleOG} OGType={OGType}>
 	<main class="max-w-6xl m-auto px-4 text-white" transition:animate={fade({ duration: '0.5s' })}>
 		<Hero />
 		<About />
