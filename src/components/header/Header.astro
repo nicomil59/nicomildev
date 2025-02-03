@@ -26,33 +26,4 @@ import closeMenuImg from './images/close-menu.svg';
     </button>
 </header>
 
-<script>
-  const openMenuIcon = document.querySelector("#open-menu");
-  const closeMenuIcon = document.querySelector("#close-menu");
-  const menu = document.querySelector("#main-nav");
-  const navLinks = document.querySelectorAll("nav a");
-
-  const openMenu = () => {
-    menu.classList.remove('hidden');
-    openMenuIcon.classList.add('hidden');
-    closeMenuIcon.classList.remove('hidden');
-  }
-
-  const closeMenu = () => {
-    menu.classList.add('hidden');
-    openMenuIcon.classList.remove('hidden');
-    closeMenuIcon.classList.add('hidden');
-  }
-
-  openMenuIcon.addEventListener('click', openMenu);
-  closeMenuIcon.addEventListener('click', closeMenu);
-
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-
-      if(openMenuIcon.classList.contains('hidden')) {
-        closeMenu();
-      }
-    })
-  });
-</script>
+<script type="module" src="/src/scripts/menu.js"></script>
