@@ -4,14 +4,14 @@ import { Image } from 'astro:assets';
 const { image, imageAlt, title, description, technos, githubUrl, demoUrl, pageUrl } = Astro.props;
 ---
 
-<li class="max-w-md md:max-w-xs h-60 md:h-96 hover:-translate-y-1 transition duration-300 group">
+<li class="max-w-md md:max-w-xs h-[18rem] md:h-96 hover:-translate-y-1 transition duration-300 group">
     <div class="h-2/5 hidden md:block">
       <Image src={image} alt={imageAlt} class="w-full h-full object-cover object-top rounded-t-lg" />
     </div>
     <div class="h-full md:h-3/5 p-6 md:p-4 rounded-lg md:rounded-t-none md:rounded-b-lg bg-neutral-700 flex flex-col justify-between md:border-t-4 md:border-t-sky-300">
       <h4 class="mb-4 text-xl font-title font-medium text-neutral-100 tracking-wide">{title}</h4>
       <p class="mb-2 text-sm font-text text-neutral-300">{description}</p>
-      <ul class="self-end flex items-center gap-2 mb-4">
+      <ul class="self-end flex items-center gap-2 mb-4 flex-wrap">
         {technos.map(techno => (<li>
             <span class="text-xs font-text font-medium tracking-wide px-2.5 py-0.5 rounded bg-neutral-900 text-sky-300">{techno}</span>
           </li>))}
