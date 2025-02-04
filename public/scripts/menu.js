@@ -1,5 +1,5 @@
 const setupMenu = () =>  {
-    console.log("menu charged !")
+    // console.log("menu charged !")
     
     const openMenuIcon = document.querySelector("#open-menu");
     const closeMenuIcon = document.querySelector("#close-menu");
